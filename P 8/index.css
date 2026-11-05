@@ -4,7 +4,6 @@ body {
     font-family: Arial;
 }
 
-/* Sticky Navbar */
 .navbar {
     background-color: black;
     color: white;
@@ -23,12 +22,11 @@ body {
     margin: 15px;
 }
 
-/* Heading */
 h1 {
     text-align: center;
 }
 
-/* 2x2 Cards */
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -37,7 +35,6 @@ h1 {
     margin: 30px auto;
 }
 
-/* Card */
 .card {
     position: relative;
 }
@@ -47,7 +44,6 @@ h1 {
     display: block;
 }
 
-/* Image Overlay */
 .overlay {
     position: absolute;
     bottom: 0;
@@ -58,7 +54,6 @@ h1 {
     padding: 10px 0;
 }
 
-/* For scrolling */
 .space {
     height: 500px;
 }

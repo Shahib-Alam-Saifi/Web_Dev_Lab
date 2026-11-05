@@ -1,0 +1,64 @@
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* Sticky Navbar */
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+}
+
+/* 2x2 Cards */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 650px;
+    margin: 30px auto;
+}
+
+/* Card */
+.card {
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+/* Image Overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* For scrolling */
+.space {
+    height: 500px;
+}

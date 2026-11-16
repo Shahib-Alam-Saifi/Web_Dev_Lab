@@ -1,77 +1,37 @@
-
-/* P7: Design Tokens and Typography System */
-
-/* 1. Design Tokens */
+/* Step 1: Apne design tokens (variables) define karein */
 :root {
-    --primary-color: #08c340;
-    --secondary-color: #c9ea5e;
-    --background-color: #f8fafc;
-    --surface-color: #ffffff;
-    --text-color: #60ebdd;
-    --muted-color: #64748b;
+  /* Fonts */
+  --font-main: 'Inter', Arial, sans-serif;
 
-    --font-family: Arial, sans-serif;
+  /* Text Sizes */
+  --size-small: 14px;
+  --size-body: 16px;
+  --size-heading: 32px;
 
-    --font-size-small: 14px;
-    --font-size-medium: 16px;
-    --font-size-large: 24px;
-    --font-size-heading: 36px;
+  /* Font Weights */
+  --weight-normal: 400;
+  --weight-bold: 700;
 
-    --spacing-small: 8px;
-    --spacing-medium: 16px;
-    --spacing-large: 32px;
-
-    --border-radius: 12px;
+  /* Colors */
+  --text-dark: #111111;
+  --text-gray: #555555;
 }
 
-/* 2. Global Styles */
-* {
-    box-sizing: border-box;
-}
-
+/* Step 2: In tokens ko apne HTML elements par apply karein */
 body {
-    margin: 0;
-    padding: var(--spacing-large);
-    font-family: var(--font-family);
-    font-size: var(--font-size-medium);
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
+  font-family: var(--font-main);
+  font-size: var(--size-body);
+  font-weight: var(--weight-normal);
+  color: var(--text-dark);
+  line-height: 1.5;
 }
 
-/* 3. Headings */
 h1 {
-    color: var(--secondary-color);
-    font-size: var(--font-size-heading);
-    font-weight: 700;
+  font-size: var(--size-heading);
+  font-weight: var(--weight-bold);
 }
 
-h2 {
-    color: var(--primary-color);
-    font-size: var(--font-size-large);
-}
-
-/* 4. Paragraphs */
-p {
-    color: var(--muted-color);
-    font-size: var(--font-size-medium);
-}
-
-/* 5. Card Design */
-.card {
-    background-color: var(--surface-color);
-    padding: var(--spacing-large);
-    margin-bottom: var(--spacing-medium);
-    border-radius: var(--border-radius);
-}
-
-/* 6. Buttons */
-button {
-    background-color: var(--primary-color);
-    color: white;
-    padding: var(--spacing-small) var(--spacing-medium);
-    border: none;
-    border-radius: var(--border-radius);
-    font-size: var(--font-size-medium);
-    cursor: pointer;
+.small-text {
+  font-size: var(--size-small);
+  color: var(--text-gray);
 }

@@ -59,23 +59,4 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
-@media (max-width: 600px) {
-
-    .navbar {
-        flex-direction: column;
-    }
-
-    .container {
-        grid-template-columns: 1fr;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
 }
